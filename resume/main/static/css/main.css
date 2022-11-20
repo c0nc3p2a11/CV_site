@@ -1163,7 +1163,7 @@ blockquote {
   text-align: center;
   padding: 5px 0;
   margin-bottom: 30px;
-  opacity: .4;
+  opacity: 1;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -1174,7 +1174,7 @@ blockquote {
 .clients.owl-carousel .owl-item img {
   display: block;
   width: 100%;
-  max-width: 100px;
+  max-width: 200px;
 }
 /* /Clients */
 
