@@ -56,9 +56,9 @@
               <li>
                 <a class="pt-trigger" href="#portfolio">Portfolio</a>
               </li>
-              <li>
+             <!-- <li>
                 <a class="pt-trigger" href="#blog">Blog</a>
-              </li>
+              </li> -->
               <li>
                 <a class="pt-trigger" href="#contact">Contact</a>
               </li>
@@ -69,14 +69,14 @@
 
           <!-- Social Links -->
           <div class="social-links">
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://github.com/c0ncep2all" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/oleg-kiselev-7b2406254" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://t.me/peterturnely" target="_blank"><i class="fab fa-telegram"></i></a>
           </div>
           <!-- / Social Links -->
 
           <!-- Copyrights -->
-          <div class="copyrights">© 2018 All rights reserved.</div>
+          <div class="copyrights">Made by Oleg Kiselev</div>
           <!-- / Copyrights -->
         </div>
       </header>
@@ -138,7 +138,7 @@
                           <p>Hello! I am glad to see you on my page. I am
 an ISTQB certified Software Testing Engineer, and I am sure that I can be a valuable asset to your team and contribute to the success of your organization. My educational background has helped me develop a strong understanding of the underlying concepts of software development, and this has enabled me to be more effective in my role as a software tester. My core competencies include problem-solving, communication, teamwork, and leadership. These are all skills that are essential for any QA engineer to possess. I believe that these are what make me an ideal candidate for you. Take a look at my CV! </p>
                           <div class="hp-buttons">
-                            <a href="#" target="_blank" class="btn btn-primary">Download CV</a>
+                            <a href="{% static "CV.pdf" %}" download="" target="_blank" class="btn btn-primary">Download CV</a>
                           </div>
                         </div>
                       </div>
@@ -406,22 +406,22 @@ an ISTQB certified Software Testing Engineer, and I am sure that I can be a valu
                             </div>
                             <div class="divider"></div>
                             <div class="right-part">
-                              <h4 class="item-title">Software testing</h4>
+                              <h4 class="item-title">Software Testing</h4>
                               <p>Fundamentals of Software Testing</p>
                             </div>
                           </div>
 
-                          <div class="timeline-item clearfix">
-                            <div class="left-part">
-                              <h5 class="item-period">2021</h5>
-                              <span class="item-company">Harvard University</span>
-                            </div>
-                            <div class="divider"></div>
-                            <div class="right-part">
-                              <h4 class="item-title">CS50x</h4>
-                              <p>Computer Science</p>
-                            </div>
-                          </div>
+<!--                          <div class="timeline-item clearfix">-->
+<!--                            <div class="left-part">-->
+<!--                              <h5 class="item-period">2021</h5>-->
+<!--                              <span class="item-company">Harvard University</span>-->
+<!--                            </div>-->
+<!--                            <div class="divider"></div>-->
+<!--                            <div class="right-part">-->
+<!--                              <h4 class="item-title">CS50x</h4>-->
+<!--                              <p>Computer Science</p>-->
+<!--                            </div>-->
+<!--                          </div>-->
 
                           <div class="timeline-item clearfix">
                             <div class="left-part">
@@ -430,8 +430,8 @@ an ISTQB certified Software Testing Engineer, and I am sure that I can be a valu
                             </div>
                             <div class="divider"></div>
                             <div class="right-part">
-                              <h4 class="item-title">Medical faculty</h4>
-                              <p>Here I got the ability to work hard.</p>
+                              <h4 class="item-title">Medical Faculty</h4>
+                              <p>General Medicine</p>
                             </div>
                           </div>
                         </div>
@@ -461,8 +461,8 @@ an ISTQB certified Software Testing Engineer, and I am sure that I can be a valu
                                     </div>
                             <div class="divider"></div>
                             <div class="right-part">
-                              <h4 class="item-title">Doctor of emergency medicine</h4>
-                              <p></p>
+                              <h4 class="item-title">Doctor of Emergency Medicine</h4>
+                              <p>Decision making in urgent situations</p>
                             </div>
                           </div>
                         </div>
@@ -591,7 +591,7 @@ an ISTQB certified Software Testing Engineer, and I am sure that I can be a valu
                   <div class="row">
                     <div class="col-xs-12 col-sm-12">
                       <div class="col-inner ts-30">
-                        <a href="#" target="_blank" class="btn btn-primary">Download CV</a>
+                        <a href="{% static "CV.pdf" %}" download="" target="_blank" class="btn btn-primary">Download CV</a>
                       </div>
                     </div>
                   </div>
@@ -623,13 +623,7 @@ an ISTQB certified Software Testing Engineer, and I am sure that I can be a valu
                             <a class="filter btn btn-sm btn-link" data-group="category_media">Media</a>
                           </li>
                           <li>
-                            <a class="filter btn btn-sm btn-link" data-group="category_mockups">Mockups</a>
-                          </li>
-                          <li>
-                            <a class="filter btn btn-sm btn-link" data-group="category_soundcloud">SoundCloud</a>
-                          </li>
-                          <li>
-                            <a class="filter btn btn-sm btn-link" data-group="category_vimeo-videos">Vimeo Videos</a>
+                            <a class="filter btn btn-sm btn-link" data-group="category_mockups">Diplomas</a>
                           </li>
                           <li>
                             <a class="filter btn btn-sm btn-link" data-group="category_youtube-videos">YouTube Videos</a>
@@ -638,72 +632,29 @@ an ISTQB certified Software Testing Engineer, and I am sure that I can be a valu
 
                         <!-- Portfolio Grid -->
                         <div class="portfolio-grid three-columns">
-                          
-                          <figure class="item lbaudio" data-groups='["category_all", "category_soundcloud"]'>
+
+                          <figure class="item lbimage" data-groups='["category_all", "category_mockups"]'>
                             <div class="portfolio-item-img">
-                              <img src={% static "images/portfolio/1.jpg" %} alt="SoundCloud Audio" title="" />
-                              <a href="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/221650664&#038;color=%23ff5500&#038;auto_play=false&#038;hide_related=false&#038;show_comments=true&#038;show_user=true&#038;show_reposts=false&#038;show_teaser=true&#038;visual=true" class="lightbox mfp-iframe" title="SoundCloud Audio"></a>
+                              <img src={% static "images/portfolio/istqb.jpg" %} alt="ISTQB FL" title="" />
+                              <a class="lightbox" title="ISTQB FL" href={% static "images/portfolio/istqb.jpg" %}></a>
                             </div>
 
-                            <i class="fa fa-volume-up"></i>
-                            <h4 class="name">SoundCloud Audio</h4>
-                            <span class="category">SoundCloud</span>
-                          </figure>
-
-                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
-                            <div class="portfolio-item-img">
-                              <img src={% static "images/portfolio/2.jpg" %} alt="Media Project 2" title="" />
-                              <a href="portfolio-1.html" class="ajax-page-load"></a>
-                            </div>
-
-                            <i class="far fa-file-alt"></i>
-                            <h4 class="name">Media Project 2</h4>
-                            <span class="category">Media</span>
-                          </figure>
-
-                          <figure class="item lbvideo" data-groups='["category_all", "category_vimeo-videos"]'>
-                            <div class="portfolio-item-img">
-                              <img src={% static "images/portfolio/3.jpg" %} alt="Vimeo Video 1" title="" />
-                              <a href={% static "https://player.vimeo.com/video/158284739" %} class="lightbox mfp-iframe" title="Vimeo Video 1"></a>
-                            </div>
-
-                            <i class="fas fa-video"></i>
-                            <h4 class="name">Vimeo Video 1</h4>
-                            <span class="category">Vimeo Videos</span>
-                          </figure>
-
-                          <figure class="item standard" data-groups='["category_all", "category_media"]'>
-                            <div class="portfolio-item-img">
-                              <img src={% static "images/portfolio/4.jpg" %} alt="Media Project 1" title="" />
-                              <a href={% static "portfolio-1.html" %} class="ajax-page-load"></a>
-                            </div>
-
-                            <i class="far fa-file-alt"></i>
-                            <h4 class="name">Media Project 1</h4>
-                            <span class="category">Media</span>
+                            <i class="far fa-image"></i>
+                            <h4 class="name">ISTQB FL</h4>
+                            <span class="category">Diplomas</span>
                           </figure>
 
                           <figure class="item lbimage" data-groups='["category_all", "category_mockups"]'>
                             <div class="portfolio-item-img">
-                              <img src={% static "images/portfolio/5.jpg" %} alt="Mockup Design 1" title="" />
-                              <a class="lightbox" title="Mockup Design 1" href={% static "images/portfolio/5.jpg" %}></a>
+                              <img src={% static "images/portfolio/stepik_python.png" %} alt="Python" title="" />
+                              <a class="lightbox" title="Python" href={% static "images/portfolio/stepik_python.png" %}></a>
                             </div>
 
                             <i class="far fa-image"></i>
-                            <h4 class="name">Mockup Design 1</h4>
-                            <span class="category">Mockups</span>
+                            <h4 class="name">Python</h4>
+                            <span class="category">Diplomas</span>
                           </figure>
 
-                          <figure class="item lbvideo" data-groups='["category_all", "category_youtube-videos"]'>
-                            <div class="portfolio-item-img">
-                              <img src="images/portfolio/6.jpg" alt="YouTube Video 1" title="" />
-                              <a href="https://www.youtube.com/embed/bg0gv2YpIok" class="lightbox mfp-iframe" title="YouTube Video 1"></a>
-                            </div>
-
-                            <i class="fas fa-video"></i>
-                            <h4 class="name">YouTube Video 1</h4>
-                            <span class="category">YouTube Videos</span>
-                          </figure>
                         </div>
                       </div>
                       <!-- /Portfolio Content -->
@@ -715,153 +666,7 @@ an ISTQB certified Software Testing Engineer, and I am sure that I can be a valu
             <!-- /Portfolio Subpage -->
 
             <!-- Blog Subpage -->
-            <section class="pt-page" id="blog">
-              <div class="section-inner custom-page-content">
-                <div class="section-title-block second-style">
-                  <h2 class="section-title">Blog</h2>
-                  <h5 class="section-description">My Diary</h5>
-                </div>
 
-                <div class="section-content">
-                  <div class="row">
-                    <div class="col-xs-12 col-sm-12">
-                      <div class="blog-masonry two-columns clearfix">
-                        
-                        <!-- Blog Post 1 -->
-                        <div class="item post-1">
-                          <div class="blog-card">
-                            <div class="media-block">
-                              <div class="category">
-                                <a href="#" title="View all posts in UI">UI</a>
-                              </div>
-                              <a href="blog-post-1.html">
-                                <img src={% static "images/blog/blog_post_6.jpg" %} class="size-blog-masonry-image-two-c" alt="Best Practices for Animated Progress Indicators" title="" />
-                                <div class="mask"></div>
-                              </a>
-                            </div>
-                            <div class="post-info">
-                              <div class="post-date">06 Apr 2018</div>
-                              <a href="blog-post-1.html">
-                                <h4 class="blog-item-title">Best Practices for Animated Progress Indicators</h4>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End of Blog Post 1 -->
-
-                        <!-- Blog Post 2 -->
-                        <div class="item post-2">
-                          <div class="blog-card">
-                            <div class="media-block">
-                              <div class="category">
-                                <a href="#" title="View all posts in E-Commerce">E-Commerce</a>
-                              </div>
-                              <a href="blog-post-1.html">
-                                <img src={% static "images/blog/blog_post_5.jpg" %} class="size-blog-masonry-image-two-c " alt="Designing the Perfect Feature Comparison Table" title="" />
-                                <div class="mask"></div>
-                              </a>
-                            </div>
-                            <div class="post-info">
-                              <div class="post-date">06 Apr 2018</div>
-                              <a href="blog-post-1.html">
-                                <h4 class="blog-item-title">Designing the Perfect Feature Comparison Table</h4>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End of Blog Post 2 -->
-
-                        <!-- Blog Post 3 -->
-                        <div class="item post-3">
-                          <div class="blog-card">
-                            <div class="media-block">
-                              <div class="category">
-                                <a href="#" title="View all posts in E-Commerce">E-Commerce</a>
-                              </div>
-                              <a href="blog-post-1.html">
-                                <img src={% static "images/blog/blog_post_4.jpg" %} class="size-blog-masonry-image-two-c" alt="An Overview of E-Commerce Platforms" title=""/>
-                                <div class="mask"></div>
-                              </a>
-                            </div>
-                            <div class="post-info">
-                              <div class="post-date">06 Apr 2018</div>
-                              <a href="blog-post-1.html">
-                                <h4 class="blog-item-title">An Overview of E-Commerce Platforms</h4>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End of Blog Post 3 -->
-
-                        <!-- Blog Post 4 -->
-                        <div class="item post-4">
-                          <div class="blog-card">
-                            <div class="media-block">
-                              <div class="category">
-                                <a href="#" title="View all posts in Design">Design</a>
-                              </div>
-                              <a href="blog-post-1.html">
-                                <img src={% static "images/blog/blog_post_3.jpg" %} class="size-blog-masonry-image-two-c" alt="Why I Switched to Sketch For UI Design" title="" />
-                                <div class="mask"></div>
-                                </a>
-                            </div>
-                            <div class="post-info">
-                              <div class="post-date">06 Apr 2018</div>
-                              <a href="blog-post-1.html">
-                                <h4 class="blog-item-title">Why I Switched to Sketch For UI Design</h4>
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End of Blog Post 4 -->
-                        
-                        <!-- Blog Post 5 -->
-                        <div class="item post-5">
-                          <div class="blog-card">
-                            <div class="media-block">
-                              <div class="category">
-                                <a href="#" title="View all posts in UI">UI</a>
-                              </div>
-                              <a href="blog-post-1.html">
-                                <img src={% static "images/blog/blog_post_2.jpg" %} class="size-blog-masonry-image-two-c" alt="Creative and Innovative Navigation Designs" title="" />
-                                <div class="mask"></div>
-                              </a>
-                            </div>
-                            <div class="post-info">
-                                <div class="post-date">06 Apr 2018</div>
-                                <a href="blog-post-1.html">
-                                  <h4 class="blog-item-title">Creative and Innovative Navigation Designs</h4>
-                                </a>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End of Blog Post 5 -->
-                        
-                        <!-- Blog Post 6 -->
-                        <div class="item post-6">
-                          <div class="blog-card">
-                            <div class="media-block">
-                              <div class="category">
-                                <a href="#" title="View all posts in Design">Design</a>
-                              </div>
-                              <a href="blog-post-1.html">
-                                <img src={% static "images/blog/blog_post_1.jpg" %} class="size-blog-masonry-image-two-c" alt="6 Easy Steps to Better Icon Design" title="" />
-                                <div class="mask"></div>
-                              </a>
-                            </div>
-                            <div class="post-info">
-                              <div class="post-date">06 Apr 2018</div>
-                              <a href="blog-post-1.html"><h4 class="blog-item-title">6 Easy Steps to Better Icon Design</h4></a>
-                            </div>
-                          </div>
-                        </div>
-                        <!-- End of Blog Post 6 -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
             <!-- /Blog Subpage -->
 
             <!-- Contact Subpage -->
@@ -876,7 +681,7 @@ an ISTQB certified Software Testing Engineer, and I am sure that I can be a valu
                   <!-- Google Map -->
                   <div class="row">
                     <div class="col-xs-12 col-sm-12">
-                      <div id="map" class="map"></div><!-- Change your address in the js/main.js file. More info in the documentation. -->
+                      <!-- Change your address in the js/main.js file. More info in the documentation. -->
                     </div>
                   </div>
                   <!-- /Google Map -->
@@ -887,7 +692,7 @@ an ISTQB certified Software Testing Engineer, and I am sure that I can be a valu
                       <div class="col-inner bs-30">
                         <div class="lm-info-block gray-default">
                           <i class="lnr lnr-phone-handset"></i>
-                          <h4>415-832-2000</h4>
+                          <h4>+996-555-8-555-69</h4>
                           <span class="lm-info-block-value"></span>
                           <span class="lm-info-block-text"></span>
                         </div>
@@ -898,7 +703,7 @@ an ISTQB certified Software Testing Engineer, and I am sure that I can be a valu
                       <div class="col-inner bs-30">
                         <div class="lm-info-block gray-default">
                           <i class="lnr lnr-map-marker"></i>
-                          <h4>San Francisco</h4>
+                          <h4>Bishkek</h4>
                           <span class="lm-info-block-value"></span>
                           <span class="lm-info-block-text"></span>
                         </div>
@@ -909,7 +714,7 @@ an ISTQB certified Software Testing Engineer, and I am sure that I can be a valu
                       <div class="col-inner bs-30">
                         <div class="lm-info-block gray-default">
                           <i class="lnr lnr-envelope"></i>
-                          <h4>alex@example.com</h4>
+                          <h4>qa.kiselev@gmail.com</h4>
                           <span class="lm-info-block-value"></span>
                           <span class="lm-info-block-text"></span>
                         </div>
@@ -972,7 +777,7 @@ an ISTQB certified Software Testing Engineer, and I am sure that I can be a valu
                             </div>
 
                             <div class="g-recaptcha" data-sitekey="6LdqmCAUAAAAAMMNEZvn6g4W5e0or2sZmAVpxVqI"></div>
-        
+
                             <input type="submit" class="button btn-send" value="Send message">
                           </div>
                         </form>
@@ -1000,11 +805,9 @@ an ISTQB certified Software Testing Engineer, and I am sure that I can be a valu
     <script src={% static "js/masonry.pkgd.min.js" %}></script>
     <script src={% static "js/owl.carousel.min.js" %}></script>
     <script src={% static "js/jquery.magnific-popup.min.js" %}></script>
-    <script src={% static "js/jquery.googlemap.js" %}></script>
     <script src={% static "js/validator.js" %}></script>
     <script src={% static 'https://www.google.com/recaptcha/api.js' %}></script>
     <!--<script src="https://maps.googleapis.com/maps/api/js?key=YOUR-API-KEY"></script>-->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
     <script src={% static "js/main.js" %}></script>
   </body>
 </html>
