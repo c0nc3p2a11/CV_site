@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="73329f27-15f1-4920-94b7-8ca16b31c9c8" name="okiselev.com" url="http://okiselev.com">
+        <fileTransfer rootFolder="/django_8ql1o/public_html" host="okiselev.com" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
