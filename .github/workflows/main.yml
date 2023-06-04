@@ -26,19 +26,8 @@ jobs:
           source: "."
           target: "/home/dro/resume_site"
 
-#    steps:
-#      - name: Checkout repository
-#        uses: actions/checkout@v2
-#
-#      - name: Configure SSH
-#        uses: webfactory/ssh-agent@v0.5.0
-#        with:
-#          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-#
-#      - name: Connect to VPS and deploy
-#        run: |
-#          ssh -o StrictHostKeyChecking=no -p 22 dro@45.144.31.135 "
-#            cd /usr/resume_site
-#            docker-compose pull
-#            docker-compose up -d
-#          "
+      - name: Connect to VPS and deploy
+        run: |
+            cd home/usr/resume_site
+            docker-compose up -d
+          "
