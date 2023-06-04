@@ -11,7 +11,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-^i5(o)1%4ypeg(s28-#0c8rj^aotq*v^_rl0awb1k75wjjfi4u'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -63,17 +63,22 @@ WSGI_APPLICATION = 'resume.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql',
+#         'NAME': 'resume',
+#         'USER': 'django',
+#         'PASSWORD': 'mysRORY44appyz**',
+#         'HOST': '127.0.0.1',
+#         'PORT': '3306',
+#     }
+# }
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'resume',
-        'USER': 'django',
-        'PASSWORD': 'mysRORY44appyz**',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
+    "default": {
+        "ENGINE": "django.db.backends.sqlite3",
+        "NAME": "resume",
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
@@ -108,21 +113,23 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
-STATICFILES_DIRS = [
-    "/home/dro/Dev/resume_site/resume/static",
+STATIC_ROOT = BASE_DIR / 'static'
+STATICFILES_DIRS = [BASE_DIR / '',
 ]
+print(BASE_DIR / "static")
+print(STATICFILES_DIRS)
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-EMAIL_HOST = 'smtp.timeweb.ru'
-EMAIL_PORT = 2525
-EMAIL_HOST_USER = 'okiselev@okiselev.com'
-EMAIL_HOST_PASSWORD = 'timRORY44appyz**'
-EMAIL_USE_TLS = True
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_USE_SSL = False
+#
+# EMAIL_HOST = 'smtp.timeweb.ru'
+# EMAIL_PORT = 2525
+# EMAIL_HOST_USER = 'okiselev@okiselev.com'
+# EMAIL_HOST_PASSWORD = 'timRORY44appyz**'
+# EMAIL_USE_TLS = True
+# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+# EMAIL_USE_SSL = False
