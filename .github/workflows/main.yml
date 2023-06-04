@@ -26,9 +26,12 @@ jobs:
           source: "."
           target: "/home/dro/resume_site"
 
-      - name: Connect to VPS and deploy
+      - name: SSH into VPS and deploy
+        uses: appleboy/ssh-action@master
         with:
+          host: 45.144.31.135
+          username: dro
           key: ${{ secrets.SSH_PRIVATE_KEY }}
-        run: |
-            ssh dro@45.144.31.135 'docker-compose -f /home/dro/resume_site/CV_site/resume
-          docker-compose.yml up -d'
+          script: |
+              ssh dro@45.144.31.135 'docker-compose -f /home/dro/resume_site/CV_site/resume/\
+              docker-compose.yml up -d'
