@@ -24,7 +24,7 @@ jobs:
           username: dro
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           source: "."
-          target: "/usr/resume_site"
+          target: "/home/dro/resume_site"
 
 #    steps:
 #      - name: Checkout repository
