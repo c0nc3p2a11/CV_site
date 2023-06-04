@@ -28,6 +28,5 @@ jobs:
 
       - name: Connect to VPS and deploy
         run: |
-            cd home/usr/resume_site
+            cd home/usr/resume_site &&
             docker-compose up -d
-          "
