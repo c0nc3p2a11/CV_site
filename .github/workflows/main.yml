@@ -13,15 +13,6 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: Set up Docker Compose
-        uses: docker/compose-cli
-        with:
-          version: '1.29.2'
-
-      - name: Copy docker-compose.yml to VPS
-        run: |
-          scp docker-compose.yml dro@45.144.31.135:/resume_site/
-
       - name: SSH into VPS and deploy
         uses: appleboy/ssh-action@master
         with:
@@ -29,6 +20,4 @@ jobs:
           username: dro
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd /resume_site/
-            docker-compose pull
-            docker-compose up -d
+            ssh dro@45.144.31.135 'cd /resume_site/ && git pull && docker-compose up -d'
