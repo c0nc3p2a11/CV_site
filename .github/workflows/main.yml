@@ -27,6 +27,8 @@ jobs:
           target: "/home/dro/resume_site"
 
       - name: Connect to VPS and deploy
+        with:
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
         run: |
-            ssh dro@45.144.31.135 'docker-compose -f /home/dro/resume_site/CV_site/resume\
-            /docker-compose.yml up -d'
+            ssh dro@45.144.31.135 'docker-compose -f /home/dro/resume_site/CV_site/resume
+          docker-compose.yml up -d'
