@@ -18,7 +18,7 @@ jobs:
         env:
           host: 45.144.31.135
           username: dro
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          private_key: ${{ secrets.SSH_PRIVATE_KEY }}
         with:
           source: "."
           target: "/usr/resume_site/"
@@ -28,6 +28,6 @@ jobs:
         with:
           host: 45.144.31.135
           username: dro
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             cd usr/resume_site/ && git pull && docker-compose up -d
