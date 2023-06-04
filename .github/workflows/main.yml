@@ -33,7 +33,5 @@ jobs:
           username: dro
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-              pwd
-              ls
               docker-compose -f /home/dro/resume_site/resume/\
               docker-compose.yml up -d
