@@ -20,4 +20,4 @@ jobs:
           username: dro
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-            cd usr/resume_site/ && git pull && docker-compose up -d
+            ssh dro@45.144.31.135 'cd usr/resume_site/ && git pull && docker-compose up -d'
