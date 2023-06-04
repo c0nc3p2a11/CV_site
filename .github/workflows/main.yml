@@ -11,10 +11,10 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@1.0.0
+        uses: actions/checkout@v1
 
       - name: Set up Docker Compose
-        uses: docker/compose-cli@1.29.2
+        uses: docker/compose-cli@v2
         with:
           version: '1.29.2'
 
