@@ -23,11 +23,11 @@ jobs:
           source: "."
           target: "/usr/resume_site/"
 
-      - name: Build
-        uses: appleboy/ssh-action@master
-        with:
-          host: 45.144.31.135
-          username: dro
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-          script: |
-            cd usr/resume_site/ && git pull && docker-compose up -d
+#      - name: Build
+#        uses: appleboy/ssh-action@master
+#        with:
+#          host: 45.144.31.135
+#          username: dro
+#          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+#          script: |
+#            cd usr/resume_site/ && git pull && docker-compose up -d
