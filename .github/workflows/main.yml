@@ -13,21 +13,15 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
-      - name: SSH into VPS and deploy
-        uses: appleboy/scp-action@master
-        env:
-          host: 45.144.31.135
-          username: dro
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
+      - name: Configure SSH
+        uses: webfactory/ssh-agent@v0.5.0
         with:
-          source: "."
-          target: "/usr/resume_site/"
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
 
-#      - name: Build
-#        uses: appleboy/ssh-action@master
-#        with:
-#          host: 45.144.31.135
-#          username: dro
-#          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-#          script: |
-#            cd usr/resume_site/ && git pull && docker-compose up -d
+      - name: Connect to VPS and deploy
+        run: |
+          ssh -o StrictHostKeyChecking=no -p 22 dro@45.144.31.135 "
+            cd /usr/resume_site
+            docker-compose pull
+            docker-compose up -d
+          "
