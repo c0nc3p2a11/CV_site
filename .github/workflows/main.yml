@@ -11,7 +11,7 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v1.0.0
+        uses: actions/checkout@1.0.0
 
       - name: Set up Docker Compose
         uses: docker/compose-cli@v
