@@ -28,4 +28,5 @@ jobs:
 
       - name: Connect to VPS and deploy
         run: |
-          docker-compose up --build -d
+            ssh dro@45.144.31.135 'docker-compose -f /home/dro/resume_site/CV_site/resume\
+            /docker-compose.yml up -d'
