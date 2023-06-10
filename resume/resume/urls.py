@@ -1,5 +1,5 @@
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from main import views as main_views
 from contact_form import views as cf_views
 from django.conf import settings
@@ -9,4 +9,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('form/', cf_views.form, name='form'),
     path('', main_views.index, name='index'),
+    path('', include('spice.urls')),
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
