@@ -7,5 +7,5 @@ def index(request):
     return render(request, "index.html")
 
 def qr_redirect(request):
-    exteenal_url = 'https://linko.page/spicethecat'
-    return redirect(exteenal_url)
+    external_url = 'https://linko.page/spicethecat'
+    return redirect(external_url)
