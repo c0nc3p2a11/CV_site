@@ -333,14 +333,24 @@
                 }
             });
 
-        //Google Maps
-        $("#map").googleMap({
-            zoom: 16 // Google Map ZOOM. You can change this value
-        });
-        $("#map").addMarker({
-            address: "S601 Townsend Street, San Francisco, California, USA", // Your Address. Change it
-        });
+        // //Google Maps
+        // $("#map").googleMap({
+        //     zoom: 16 // Google Map ZOOM. You can change this value
+        // });
+        // $("#map").addMarker({
+        //     address: "S601 Townsend Street, San Francisco, California, USA", // Your Address. Change it
+        // });
 
+        ///////////////////// added by gpt
+        $(document).ready(function() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $('.lmpixels-scroll-to-top').fadeIn();
+        } else {
+            $('.lmpixels-scroll-to-top').fadeOut();
+        }
+    });
+        ////////////////////
 
         $('.lmpixels-scroll-to-top').click(function () {
             $('body,html').animate({

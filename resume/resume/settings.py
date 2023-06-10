@@ -117,8 +117,6 @@ USE_TZ = True
 STATIC_ROOT = BASE_DIR / 'static'
 STATICFILES_DIRS = [BASE_DIR / '',
 ]
-print(BASE_DIR / "static")
-print(STATICFILES_DIRS)
 
 STATIC_URL = '/static/'
 
