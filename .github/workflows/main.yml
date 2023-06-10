@@ -33,5 +33,6 @@ jobs:
           username: dro
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
-              docker-compose -f /home/dro/resume_site/resume/\
-              docker-compose.yml up -d
+              cd /home/dro/resume_site/resume/
+              docker-compose pull
+              docker-compose up -d --remove-orphans
